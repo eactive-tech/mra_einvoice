@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-17 12:30:52.163718",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "request_id",
+  "request_type",
+  "request",
+  "response",
+  "response_status",
+  "aes_key",
+  "mra_token",
+  "mra_key",
+  "payload"
+ ],
+ "fields": [
+  {
+   "fieldname": "request_id",
+   "fieldtype": "Data",
+   "label": "Request ID"
+  },
+  {
+   "fieldname": "request_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Request Type"
+  },
+  {
+   "fieldname": "request",
+   "fieldtype": "JSON",
+   "label": "Request"
+  },
+  {
+   "fieldname": "response",
+   "fieldtype": "JSON",
+   "label": "Response"
+  },
+  {
+   "fieldname": "response_status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Response Status"
+  },
+  {
+   "fieldname": "mra_token",
+   "fieldtype": "Small Text",
+   "label": "MRA Token"
+  },
+  {
+   "fieldname": "mra_key",
+   "fieldtype": "Small Text",
+   "label": "MRA Key"
+  },
+  {
+   "fieldname": "aes_key",
+   "fieldtype": "Small Text",
+   "label": "AES Key"
+  },
+  {
+   "fieldname": "payload",
+   "fieldtype": "JSON",
+   "label": "Payload"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-17 13:42:35.838533",
+ "modified_by": "Administrator",
+ "module": "MRA eInvoice",
+ "name": "MRA eInvoice Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

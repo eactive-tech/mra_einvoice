@@ -116,13 +116,13 @@ doctype_js = {"Sales Invoice" : "public/js/sales_invoice.js"}
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Sales Invoice": {
+		"before_submit": "mra_einvoice.mra_einvoice.api.validate_before_submit",
+		"on_cancel": "method",
+		"on_trash": "method"
+	}
+}
 
 # Scheduled Tasks
 # ---------------

@@ -8,10 +8,11 @@
  "engine": "InnoDB",
  "field_order": [
   "authentication_url",
+  "transmit_url",
   "ebs_mra_id",
   "area_code",
   "user_name",
-  "password",
+  "user_password",
   "mra_certificate"
  ],
  "fields": [
@@ -31,11 +32,6 @@
    "label": "Area Code"
   },
   {
-   "fieldname": "password",
-   "fieldtype": "Data",
-   "label": "Password"
-  },
-  {
    "fieldname": "mra_certificate",
    "fieldtype": "Attach",
    "label": "MRA Certificate"
@@ -44,12 +40,22 @@
    "fieldname": "ebs_mra_id",
    "fieldtype": "Data",
    "label": "EBS MRA Id"
+  },
+  {
+   "fieldname": "user_password",
+   "fieldtype": "Password",
+   "label": "User Password"
+  },
+  {
+   "fieldname": "transmit_url",
+   "fieldtype": "Data",
+   "label": "Transmit URL"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-04-27 17:10:26.982381",
+ "modified": "2024-07-17 13:12:24.558253",
  "modified_by": "Administrator",
  "module": "MRA eInvoice",
  "name": "MRA eInvoice Settings",
