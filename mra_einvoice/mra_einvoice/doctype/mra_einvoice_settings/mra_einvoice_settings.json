@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-27 16:54:21.477964",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "authentication_url",
+  "ebs_mra_id",
+  "area_code",
+  "user_name",
+  "password",
+  "mra_certificate"
+ ],
+ "fields": [
+  {
+   "fieldname": "authentication_url",
+   "fieldtype": "Data",
+   "label": "Authentication URL"
+  },
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "label": "User Name"
+  },
+  {
+   "fieldname": "area_code",
+   "fieldtype": "Data",
+   "label": "Area Code"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "label": "Password"
+  },
+  {
+   "fieldname": "mra_certificate",
+   "fieldtype": "Attach",
+   "label": "MRA Certificate"
+  },
+  {
+   "fieldname": "ebs_mra_id",
+   "fieldtype": "Data",
+   "label": "EBS MRA Id"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-04-27 17:10:26.982381",
+ "modified_by": "Administrator",
+ "module": "MRA eInvoice",
+ "name": "MRA eInvoice Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
